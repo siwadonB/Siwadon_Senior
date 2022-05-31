@@ -1,0 +1,28 @@
+<div class="all">
+<table class="table table-hover">
+    <thead>
+      
+      <th>Question</th>
+      <th>Answer1 & Point</th>
+      <th>Answer2 & Point</th>
+      <th>Answer3 & Point</th>
+      <th>Answer4 & Point</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of list">
+       
+        <td (click)="onEdit(emp)">{{emp.qnum}} . {{emp.qname}}</td>
+        <td (click)="onEdit(emp)">{{emp.ans}} , {{emp.ansp}}</td>
+        <td (click)="onEdit(emp)">{{emp.ans1}} , {{emp.ans1p}}</td>
+        <td (click)="onEdit(emp)">{{emp.ans2}} , {{emp.ans2p}}</td>
+        <td (click)="onEdit(emp)">{{emp.ans3}} , {{emp.ans3p}}</td>
+    
+
+        <td><a class="btn text-danger" (click)="onDelete(emp.id)"><p>Delete</p></a></td>
+        <router-outlet></router-outlet>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

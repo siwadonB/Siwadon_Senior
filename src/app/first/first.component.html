@@ -1,0 +1,37 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="assets/photo/logo.png">
+  <a class="mfont">Questionnaire about medical(Depression)</a>
+  <a class="navbar-brand" routerLink="/qn" routerLinkActive="active">Create Questionnaire</a>
+  <a class="navbar-brand" routerLink="/manage" routerLinkActive="active">Manage member information</a>
+  <!-- <a class="navbar-brand" routerLink="/history" routerLinkActive="active">History result of member</a> -->
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<h1 class="display-4">Create questionnaire</h1> <img class="pic1"src="assets/photo/question.png">
+
+<form class="main">
+  <div class="container">
+<table class="table table-hover">
+  <thead>
+    <th>Questionnaire</th>
+    <th>Create question page</th>
+    <th>Create middle point of result</th>
+    <th>Delete</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of list">
+      <td (click)="onEdit(emp)">{{emp.name}}</td>
+      <td><a routerLink="/home" routerLinkActive="active">Question</a></td>
+      <td><a routerLink="/com" routerLinkActive="active">Create middle point</a></td>
+      <td><a class="btn text-danger" (click)="onDelete(emp.id)"><p>Delete</p></a></td>
+      <router-outlet></router-outlet>
+    </tr>
+  </tbody>
+</table>
+</div>
+</form>
+

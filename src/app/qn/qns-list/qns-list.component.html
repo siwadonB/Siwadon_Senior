@@ -1,0 +1,20 @@
+<div class="all">
+<table class="table table-hover">
+    <thead>
+      <th>Questionnaire</th>
+      <th>Create Question</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of list">
+        <td (click)="onEdit(emp)">{{emp.name}}</td>
+        <td><a routerLink="/home" routerLinkActive="active">Question</a></td>
+        <td><a class="btn text-danger" (click)="onDelete(emp.id)"><p>Delete</p></a></td>
+        <!-- <td><button class="btn btn-lg btn-block btn-info">Answer</button></td> -->
+        
+        <router-outlet></router-outlet>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

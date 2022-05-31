@@ -1,0 +1,23 @@
+<table class="table table-hover">
+    <thead>
+      <th>Username</th>
+      <th>result</th>
+
+
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of list">
+        <td >{{member.user_name}}</td>
+        <td >{{member.result}}</td>
+        
+      </tr>
+        <!-- <td><a class="btn text-danger" (click)="onDelete(member.id)"><p>Delete</p></a></td> -->
+
+        <router-outlet></router-outlet>
+
+     
+    </tbody>
+  </table>
+
+

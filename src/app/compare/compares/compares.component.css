@@ -1,0 +1,49 @@
+input{
+    width: 27%;
+    margin:auto;
+    font-size: 18px;
+}
+.display-4{
+  text-align: center;
+  margin-top: 91px;
+  margin-bottom: 25px;
+  font-family: Futara;
+  font-weight: normal;
+}
+.btn-block{
+    width: 15%;
+    margin: auto;
+    margin-bottom: -32px;
+    margin-top: 85px;
+}
+img{
+  width: 7em;
+  height: auto;
+}
+a{
+  font-family: Futara;
+  font-weight: normal;
+  font-size: 25px;
+  padding-left: 15px;
+}
+th,td{
+  font-family: Futara;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  background-color: #F2F2F2!important;
+}
+.qn{
+  position: relative!important;
+  top: 2rem;
+    left: 40rem;
+    font-size: 20px;
+    font-family: Futara;
+  font-weight: normal;
+  margin: auto;
+}
+.pic1{
+  position: relative;
+  top: -7rem;
+  left: 101rem;
+}

@@ -1,0 +1,16 @@
+th,td{
+    font-family: Futara;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    background-color: #F2F2F2!important;
+
+}
+.all{
+    width: 85%;
+    margin: auto;
+}
+table{
+    border: 1px solid #F2F2F2!important;
+    border-radius: 100px;
+}

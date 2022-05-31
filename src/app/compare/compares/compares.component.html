@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="assets/photo/logo.png">
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active">Questionnaire about medical(Depression)</a>
+    <a class="navbar-brand" routerLink="/manage" routerLinkActive="active">Manage member information</a>
+  </nav>
+    
+    <h1 class="display-4">Create middle point of result</h1><img class="pic1"src="assets/photo/work.png">
+    <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    
+      <div class="form-group">
+       <div class="qn"> Create middle point of result :</div> 
+        <input type="number" name="mid" #mid="ngModel" [(ngModel)]="service.formData.mid" class="form-control" placeholder="Create middle point of result" required>
+        <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+      </div>
+    
+      <div class="form-group">
+        <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">SUBMIT</button>
+      </div>
+    
+    
+    
+    </form>
+    
+    
+    

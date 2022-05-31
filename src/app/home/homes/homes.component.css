@@ -1,0 +1,281 @@
+/* input{
+    width: 30%;
+    margin:auto;
+} */
+.display-4{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: Futara;
+  font-weight: normal;
+}
+.btn-block{
+  width: 22%;
+  margin: -7rem 0rem 5rem 27rem;
+}
+
+.inline1,input{
+  width: auto;
+  font-family: Futara;
+  font-weight: normal;
+}
+img{
+  width: 7em;
+  height: auto;
+}
+form{
+  text-align: center;
+  font-size: 20px;
+  font-family: Futara;
+  font-weight: normal;
+}
+
+.hh{
+display:inline-block;
+}
+a{
+  font-family: Futara;
+  font-weight: normal;
+  font-size: 25px;
+  padding-left: 15px;
+}
+ .pic{
+  width: 7em;
+  height: auto;
+
+ }
+
+  .pans1{
+position: absolute;
+top: 34.3rem;
+left: 46rem;
+  }
+  .pquestionno{
+    position: absolute!important;
+    left:45.7rem!important;
+    top: 25rem;
+  }
+  .pquestion{
+    position: absolute!important;
+    left:45.7rem!important;
+    top:28.5rem;
+  }
+  .pp1{
+    position: absolute;
+    left: 84.7rem!important;
+    bottom: 45.7rem;
+  }
+  .pans2{
+    position: absolute!important;
+    left:45.9rem!important;
+    bottom: 41.4rem;
+  }
+  .form-control3{
+    margin-left: -32.8rem!important;
+    margin-top: 1.4rem;
+    width: 15%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .form-control{
+    margin-left: 13rem!important;
+    margin-top: 1.4rem;
+    width: 50%;
+    
+  }
+  .ans1box{
+    position: relative!important;
+    left: 13rem;
+    top: 2.6rem;
+    display: block;
+    width: auto;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 30%;
+  }
+  .point1box{
+    position: relative!important;
+    left: 55rem;
+    top: -1.4rem;
+    display: block;
+    width: 10%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .ansbox2{
+    position: relative!important;
+    left: 13rem;
+    top: -0.7rem;
+    display: block;
+    width: auto;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 30%;
+  }
+  .pp2{
+    position: absolute!important;
+    left: 84.7rem!important;
+    bottom: 41.4rem;
+  }
+  .point2box{
+    position: relative!important;
+    left: 55rem;
+    top: -4.8rem;
+    display: block;
+    width: 10%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .pans3{
+    position: absolute!important;
+    left:45.9rem!important;
+    bottom: 37.4rem;
+  }
+  .ansbox3{
+    position: relative!important;
+    left: 13rem;
+    top: -4.2rem;
+    display: block;
+    width: auto;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 30%;
+  }
+  .pp3{
+    position: absolute!important;
+    left: 84.7rem!important;
+    bottom: 37.3rem;
+  }
+  .point3box{
+    position: relative!important;
+    left: 55rem;
+    top: -8.2rem;
+    display: block;
+    width: 10%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .pans4{
+    position: absolute!important;
+    left:45.9rem!important;
+    bottom: 33.5rem;
+  }
+  .ans4box{
+    position: relative!important;
+    left: 13rem;
+    top: -8.0rem;
+    display: block;
+    width: auto;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 30%;
+  }
+  .pp4{
+    position: absolute!important;
+    left: 84.7rem!important;
+    bottom: 33.5rem;
+  }
+  .point4box{
+    position: relative!important;
+    left: 55rem;
+    top: -12.2rem;
+    display: block;
+    width: 10%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .container {
+    height: auto;
+    background: #F2F2F2;
+    border: 0.5px solid #ccc;
+    box-shadow: 1px 1px 2px #fff inset,
+                -1px -1px 2px #fff inset;
+    border-radius: 40px;  
+    margin-bottom: 5rem;       
+  }
+  .pic1{
+    position: relative;
+    top: -7rem;
+    left: 91rem;
+  }

@@ -1,0 +1,17 @@
+<div class="all">
+    <table class="table table-hover">
+        <thead>
+          <th>Middle point of result</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let range of list">
+            <td (click)="onEdit(range)">{{range.mid}}</td>
+            <td><a class="btn text-danger" (click)="onDelete(range.id)"><p>Delete</p></a></td>
+
+            <router-outlet></router-outlet>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>

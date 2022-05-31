@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="assets/photo/logo.png">
+  <a class="navbar-brand" routerLink="/">Questionnaire about medical(Depression)</a>
+  <a routerLink="/manage">Manage member infomation</a>
+  <a routerLink="/com">Create mid point of result</a>
+</nav>
+
+
+<h1 class="display-4">Create questions</h1> <img class="pic1"src="assets/photo/faq.png">
+
+<div class="shadow">
+  <div class="container">
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+
+  <div class="form-group">
+    <div class="inline">
+<p class="pquestionno">Question No. :</p>
+   <input type="number" min="1" pattern="[0-9]+([.,][0-9]+)?" name="qnum" #qnum="ngModel" [(ngModel)]="service.formData.qnum" class="form-control3" placeholder="Question NO." required>
+    <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+  
+  </div>
+  
+  <div class="form-group">
+      <p class="pquestion" >Question :</p>
+    <input name="qname" #qname="ngModel" [(ngModel)]="service.formData.qname" class="form-control" placeholder="Question" required>
+    <!-- <div *ngIf="qname.invalid && qnmae.touched" class="validation-error">This field is required.</div> -->
+  </div>
+  </div>
+  <div class="inline">
+  <div class="form-group">
+<p class="pans1">Answer1 :</p>
+    <input class="ans1box" name="ans" #ans="ngModel" [(ngModel)]="service.formData.ans" placeholder="Answer1" required>
+    <br/>
+<p class="pp1">Point of answer 1 :</p>
+    <input class="point1box"pattern="\d+" type="number" name="ansp" #ansp="ngModel" [(ngModel)]="service.formData.ansp"  placeholder="Point1" required>
+    <!-- <div *ngIf="qname.invalid && qnmae.touched" class="validation-error">This field is required.</div> -->
+  </div>
+  <div class="form-group">
+<p class="pans2">Answer2 :</p>
+    <input class="ansbox2" name="ans1" #ans1="ngModel" [(ngModel)]="service.formData.ans1"  placeholder="Answer2" >
+    <br/>
+<p class="pp2">Point of answer 2 :</p>
+    <input class="point2box"pattern="\d+" type="number" name="ans1p" #ans1p="ngModel" [(ngModel)]="service.formData.ans1p"  placeholder="Point2" >
+    <!-- <div *ngIf="qname.invalid && qnmae.touched" class="validation-error">This field is required.</div> -->
+  </div>
+  <div class="form-group">
+<p class="pans3">Answer3 :</p>
+    <input class="ansbox3"name="ans2" #ans2="ngModel" [(ngModel)]="service.formData.ans2"  placeholder="Answer3" >
+    <br/>
+<P class="pp3">Point of answer 3 :</P>
+    <input class="point3box"pattern="\d+" type="number" name="ans2p" #ans2p="ngModel" [(ngModel)]="service.formData.ans2p"  placeholder="Point3" >
+    <!-- <div *ngIf="qname.invalid && qnmae.touched" class="validation-error">This field is required.</div> -->
+  </div>
+  <div class="form-group">
+<p class="pans4">Answer4 :</p>
+    <input class="ans4box"name="ans3" #ans3="ngModel" [(ngModel)]="service.formData.ans3"  placeholder="Answer4" >
+    <br/>
+<p class="pp4">Point of answer 4 :</p>
+    <input class="point4box"pattern="\d+" type="number" name="ans3p" #ans3p="ngModel" [(ngModel)]="service.formData.ans3p"  placeholder="Point4" >
+    
+  </div>
+</div>
+
+
+  <div class="submit">
+    <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">SUBMIT</button>
+  </div>
+
+
+
+</form>
+
+
+</div>
+</div>

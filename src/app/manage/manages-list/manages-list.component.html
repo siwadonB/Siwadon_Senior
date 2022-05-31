@@ -1,0 +1,29 @@
+<div class="all">
+<table class="table table-hover">
+    <thead>
+      <th>Username</th>
+      <th>Password</th>
+      <th>School</th>
+      <th>Job</th>
+      <th>Age</th>
+      <th>Sex</th>
+
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of list">
+        <td (click)="onEdit(member)">{{member.user_name}}</td>
+        <td (click)="onEdit(member)">{{member.user_password}}</td>
+        <td (click)="onEdit(member)">{{member.school}}</td>
+        <td (click)="onEdit(member)">{{member.job}}</td>
+        <td (click)="onEdit(member)">{{member.age}}</td>
+        <td (click)="onEdit(member)">{{member.sex}}</td>
+        <td><a class="btn text-danger" (click)="onDelete(member.id)"><p>Delete</p></a></td>
+        <!-- <td><button class="btn btn-lg btn-block btn-info">Answer</button></td> -->
+        
+        <router-outlet></router-outlet>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

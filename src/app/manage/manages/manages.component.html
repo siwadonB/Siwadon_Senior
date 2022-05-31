@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="assets/photo/logo.png">
+  <a class="navbar-brand" routerLink="/">Questionnaire about medical(Depression)</a>
+  <a routerLink="/manage">Manage member infomation</a>
+ 
+</nav>
+  
+ 
+  <h1 class="display-4">Manage member Infomation</h1> <img class="pic1"src="assets/photo/membership.png">
+  <div class="container">
+  <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    
+    <div class="form-group">
+      <p class="i1">Username : </p>
+      <input name="user_name" #user_name="ngModel" [(ngModel)]="service.formData.user_name" class="form-control1" placeholder="Username" required>
+      <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+    </div>
+    <div class="form-group">
+      <p class="i2">Password : </p>
+        <input name="user_password" #user_password="ngModel" [(ngModel)]="service.formData.user_password" class="form-control1" placeholder="UserPassword" required>
+        <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+      </div>
+      <p class="i3">School : </p>
+      <div class="form-group">
+        <input name="school" #school="ngModel" [(ngModel)]="service.formData.school" class="form-control1" placeholder="School" required>
+        <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+      </div>
+      <div class="form-group">
+        <p class="i4">Job : </p>
+        <input name="job" #job="ngModel" [(ngModel)]="service.formData.job" class="form-control1" placeholder="Job" required>
+        <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+      </div>
+      <div class="form-group">
+        <p class="i5">Age : </p>
+        <input name="age" #age="ngModel" [(ngModel)]="service.formData.age" class="form-control2" placeholder="Age" required>
+        <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+      </div>
+      <div class="form-group">
+        <p class="i6">Sex : </p>
+        <input name="sex" #sex="ngModel" [(ngModel)]="service.formData.sex" class="form-control3" placeholder="Sex" required>
+        <!-- <div *ngIf="qnum.invalid && qnum.touched" class="validation-error">This field is required.</div> -->
+      </div>
+  
+    <div class="form-group">
+      <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">SUBMIT</button>
+    </div>
+  
+  
+  
+  </form>
+  
+</div>
+  

@@ -1,0 +1,17 @@
+input{
+    width: 50%;
+    margin:auto;
+}
+.display-4{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: Futara;
+  font-weight: normal;
+}
+.btn-block{
+    width: 25%;
+    margin: auto;
+    margin-bottom: 25px ;
+    margin-top: 25px;
+}

@@ -1,0 +1,15 @@
+<table class="table table-hover">
+    <thead>
+      <th>Answer</th>
+      <th>Point of Answer</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ans of list">
+        <td (click)="onEdit(ans)">{{ans.ans}}</td>
+        <td (click)="onEdit(ans)">{{ans.ansp}}</td>
+        <td><a class="btn text-danger" (click)="onDelete(ans.id)"><p>Delete</p></a></td>
+        <router-outlet></router-outlet>
+      </tr>
+    </tbody>
+  </table>
+
